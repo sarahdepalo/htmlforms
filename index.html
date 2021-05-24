@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messing With HTML Forms</title>
+    <meta name ="description" content ="Messing around and getting practice with them pesky HTML forms!">
+    <style>
+        label {
+            display: block;
+            margin: 16px 0px 16px 0px;
+            width: 100%;
+        }
+    </style>
+
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>User Registration</legend>
+            <label>Your Name
+                <input type="text" name="username" placeholder="Please Enter Your Name"/> 
+            </label>
+            <label>Email Address   
+                <input type="email" name="user-email" placeholder="Please Enter Your Email">
+            </label>
+            <!-- setting the input to type='password' will automatically hide the password input. -->
+            <label> Your password
+                <input type="password" name="password" placeholder="Enter a Password">
+            </label>
+            <!-- It is good practice for buttons to usually inform the user of what they are about to do or submit.-->
+            <button type="submit">REGISTER</button>
+
+        </fieldset>
+    </form>
+
+    <!-- If you have multiple forms on the page, the names of the inputs need to be unique!-->
+    <form>
+        <fieldset>
+            <legend>User Login</legend>
+            
+            <label> Your Email Address
+                <!-- As mentioned above - the name for this input is login-username as opposed to user-email -->
+                <input type="email" name="login-username" placeholder="What is your login email address?">
+            </label>
+            <label> Your Password
+                <input type="password" name="login-password" placeholder="What is your password?">
+            </label>
+            <button type="submit">LOGIN</button>
+        </fieldset>
+    </form>
+    
+</body>
+</html>

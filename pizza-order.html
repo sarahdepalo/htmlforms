@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place a Pizza Order</title>
+    <meta name ="description" content ="We like ours with sausage and green peppers. How do you take your pizza?">
+    <style>
+        label {
+            display: block;
+            margin: 16px 0px 16px 0px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Note For Future Use: IDs are just going to be used for the CSS and JS and won't effect the form.-->
+    <form>
+        <fieldset>
+            <legend>Order a Pizza!</legend>
+            <label>Pizza Size:
+            <select name= "pizza_size">
+                <option value="">Please choose an option</option> 
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+                <option value="xl">X-Large</option>
+            </select>
+            </label>
+            <label> Choose Your Crust:</label>
+            <label>
+                <input type = "radio" id ="pan_pizza" name="crust" value="pan_pizza" checked>Pan Pizza
+            </label>
+            <label>
+                <input type = "radio" id ="hand_tossed" name="crust" value="hand_tossed">Hand Tossed Pizza
+            </label>
+            <label>
+                <input type = "radio" id ="thin" name="crust" value="thin" >Thin Crust
+            </label>
+
+            <label>Choose Your Toppings:</label>
+            <label>
+                <input type="checkbox" id="pepperoni" name="toppings" value="pepperoni"checked>Pepperoni
+            </label>
+            <label>
+                <input type="checkbox" id="sausage" name="toppings" value="sausage">Sausage
+            </label>
+            <label>
+                <input type="checkbox" id="ham" name="toppings" value="ham">Ham
+            </label>
+            <label>
+                <input type="checkbox" id="green-peppers" name="toppings" value="geen-peppers">Green Peppers
+            </label>
+            <label>
+                <input type="checkbox" id="onion" name="onion">Onion
+            </label>
+
+            <label> Is this for delivery?</label>
+            <label>
+                <input type = "radio" id ="delivery" name="delivery_choice" value="yes" checked>Yes
+            </label>
+            <label>
+                <input type = "radio" id ="pickup" name="delivery_choice" value="no">No
+            </label>
+
+            <label>Name For the Order
+                <input type="text" name="customer_name" placeholder="Please Enter Your Name"/> 
+            </label>
+            <label>Address
+                <input type="text" name="customer_address" placeholder="Please Enter the Delivery Address"/> 
+            </label>
+
+            <label for="instructions">Any Additional Instructions:</label>
+            <textarea id="instructions" name="instructions" rows="5" cols="33">Extra crispy, extra onions, etc...
+            </textarea>
+        </fieldset>
+    </form>
+</body>
+</html>

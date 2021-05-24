@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Small HTML Exercises</title>
+    <meta name ="description" content ="Practice makes perfect.">
+    <style>
+        label {
+            display: block;
+            margin: 16px 0px 16px 0px;
+            width: 100%;
+        }
+    </style>
+
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Harry Potter Trivia</legend>
+            <label> What is your Harry Potter House?
+                <input type="text" name="harry_potter_house" placeholder="Please enter your house name">
+            </label>
+            <label> Do you like Ron Weasley?
+                <select name= "ron_weasely">
+                    <option value="">Please choose an option</option> 
+                    <option value="yes">Of course!</option>
+                    <option value="maybe">Meh</option>
+                    <option value="no">I hate all gingers</option>
+                </select>
+            </label>
+            <label> What is Hagrid's first name?
+            </label>
+            <label>
+                <input type = "radio" id ="john"name="hagrids_name" value="rubeus" checked>Rubeus
+            </label>
+            <label>
+                <input type="radio" name="hagrids_name" id="john" value="john"> John
+            </label>
+            <label>
+                <input type="radio" name="hagrids_name" id="john" value="finneus"> Finneus
+            </label>
+        </fieldset>
+    </form>
+</body>
+</html>
