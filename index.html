@@ -19,15 +19,16 @@
     <form>
         <fieldset>
             <legend>User Registration</legend>
+            <!-- Enclosing in label rather than p or div allows for a wider click range a.k.a more user accesibility-->
             <label>Your Name
                 <input type="text" name="username" placeholder="Please Enter Your Name"/> 
             </label>
             <label>Email Address   
-                <input type="email" name="user-email" placeholder="Please Enter Your Email">
+                <input type="email" name="user-email" placeholder="Please Enter Your Email" required>
             </label>
             <!-- setting the input to type='password' will automatically hide the password input. -->
             <label> Your password
-                <input type="password" name="password" placeholder="Enter a Password">
+                <input type="password" name="password" placeholder="Enter a Password" required>
             </label>
             <!-- It is good practice for buttons to usually inform the user of what they are about to do or submit.-->
             <button type="submit">REGISTER</button>

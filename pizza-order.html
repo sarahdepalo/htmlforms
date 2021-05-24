@@ -7,6 +7,10 @@
     <title>Place a Pizza Order</title>
     <meta name ="description" content ="We like ours with sausage and green peppers. How do you take your pizza?">
     <style>
+        body {
+            margin: 0 auto;
+            max-width: 500px;
+        }
         label {
             display: block;
             margin: 16px 0px 16px 0px;
@@ -24,7 +28,7 @@
         <fieldset>
             <legend>Order a Pizza!</legend>
             <label>Pizza Size:
-            <select name= "pizza_size">
+            <select name= "pizza_size" required>
                 <option value="">Please choose an option</option> 
                 <option value="small">Small</option>
                 <option value="medium">Medium</option>
@@ -69,10 +73,11 @@
             </label>
 
             <label>Name For the Order
-                <input type="text" name="customer_name" placeholder="Please Enter Your Name"/> 
+                <input type="text" name="customer_name" placeholder="Please Enter Your Name" required/> 
             </label>
+            <!-- The for label will only do something if there is an id-->
             <label for = "customer_address">Address
-                <input type="text" name="customer_address" placeholder="Please Enter the Delivery Address"/> 
+                <input type="text" name="customer_address" id= "customer_address" placeholder="Please Enter the Delivery Address" required/> 
             </label>
 
             <label for="instructions">Any Additional Instructions:</label>

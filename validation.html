@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation in Forms</title>
+    <style>
+        body {
+            margin: 0 auto;
+            max-width: 500px;
+        }
+        label {
+            display: block;
+            margin: 16px 0px 16px 0px;
+            width: 100%;
+        }
+        button {
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Form that Checks Pattern</legend>
+            <label> Enter Your Age:
+                <input type = "number" min ="0" max = "100" name="user_age" required />
+            </label>
+            <button type="submit">SUBMIT</button>
+        </fieldset>
+    </form>
+
+    <form>
+        <fieldset>
+            <legend>Custom Error Message</legend>
+            <label>Enter a Username:
+                <input type="text" name="username" placeholder ="Please Enter a Username" minlength="15" maxlength ="20" required>
+                <button type="submit">SUBMIT</button>
+            </label>
+        </fieldset>
+    </form>
+    </label>
+
+
+</body>
+</html>
