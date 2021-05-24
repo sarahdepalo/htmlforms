@@ -12,6 +12,10 @@
             margin: 16px 0px 16px 0px;
             width: 100%;
         }
+        button {
+            display: block;
+            margin-top: 10px;
+        }
     </style>
 </head>
 <body>
@@ -53,7 +57,7 @@
                 <input type="checkbox" id="green-peppers" name="toppings" value="geen-peppers">Green Peppers
             </label>
             <label>
-                <input type="checkbox" id="onion" name="onion">Onion
+                <input type="checkbox" id="onion" name="toppings" value="onions">Onion
             </label>
 
             <label> Is this for delivery?</label>
@@ -67,13 +71,14 @@
             <label>Name For the Order
                 <input type="text" name="customer_name" placeholder="Please Enter Your Name"/> 
             </label>
-            <label>Address
+            <label for = "customer_address">Address
                 <input type="text" name="customer_address" placeholder="Please Enter the Delivery Address"/> 
             </label>
 
             <label for="instructions">Any Additional Instructions:</label>
             <textarea id="instructions" name="instructions" rows="5" cols="33">Extra crispy, extra onions, etc...
             </textarea>
+            <button type="submit">SUBMIT</button>
         </fieldset>
     </form>
 </body>
